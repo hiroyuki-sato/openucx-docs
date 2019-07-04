@@ -2,46 +2,69 @@
 # Sort alphabetical order (case insensitive)
 ACK	Acknowledge
 am	Active Message
-CMA
-CUDA	Compute Unified Device Architecture(NVIDIA)
-DC	
-ep	End Point
-gcopy
-IB	Infiniband
-IPC	Inter Process Communication
-KNEM
+bcopy	Byte copy
+BTL	Byte Transfer Layer
+cm	Communication?
 CMA	Cross Memory Attach
+csmock	static analysis tools
+CUDA	Compute Unified Device Architecture(NVIDIA)
+DC	Dynamically Connected transport(Infiniband)
+ep	End Point
+fd	File Descriptor
+GDR	GPUDirect RDMA
+gtest	Google Test
+HPC	High Performance Computing
+IB	Infiniband
+iface	Interaface
+IPC	Inter Process Communication
+JUCX	Java API over UCP
 KNEM	Kernel Nemesis
 md	Memory Domain
+MLX	Mellanox Technologies
+mlx5	Connect-X5 VPI
 mm	Memory Management
 MPI	Message Passing INterface
 MPICH	A MPI Implementation
+MTT	The MPI Testing Tool
 NAK	Negative Acknowledge
+OFA	OpenFabrics Alliance
+OMPI	OpenMPI
 OOB	Out of band
 OOO	Out of Order
 OPA	Omni-Path Architecture
 Open MPI	A MPI Implementation
 PCIe	PCI Express
 PGAS	Partitioned Global Address Space
-POSIX
+POSIX	Portable operating system interface
+PR	Pull Request
 QP	Queue Pair(Infiniband)
 RC	Reliable Connection (Infiniband)
+RDMA	Remote Direct Memory Access
+REQ	Request
+rkey	Remote KEY
 RMA	Remote Memory Access
 RNR	Receiver Not Ready
 RoCE	RDMA over Converged Ethernet
-ROCm	Radeon Open Compute platform
+ROCm	Radeon Open Compute platform(AMD)
 Skb	Socket Buffer
+sm	Shared Memory
+SM	Subnet Manager(Infiniband)
 SockCM	
 SRQ	Shared Receive Queue
-SYSV
+SYSV	UNIX System V
 tl
 UC	Unreliable Connection (Infiniband)
-UCM	Unified Communication Management
+UCF	Unified Communication Framework
+UCM	Unified Communication Memory
 UCP	Unified Communication Protocols Higher level API
 UCS	Unified Communication Service Common utilities.
 UCT	Unified Communication Transport Lower level API
+UCX	Unified Communication X
 UD	Unreliable Datagram (Infiniband)
 uGNI	user level generic network interface(Cray)
+VPI	Virtual Protocol Interconnect
 WQE	Work Queue Elements (pronounce WOOKIE)
+WR	Work Request
 XPMEM	cross partition memory
+XRC	eXtended Reliable Connection(Infiniband)
 Zcopy	Zero Copy
