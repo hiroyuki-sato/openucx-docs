@@ -4,7 +4,7 @@ ACK	Acknowledge
 am	Active Message
 bcopy	Byte copy
 BTL	Byte Transfer Layer
-cm	Communication?
+cm	Connection Manager
 CMA	Cross Memory Attach
 csmock	static analysis tools
 CUDA	Compute Unified Device Architecture(NVIDIA)
@@ -49,10 +49,10 @@ ROCm	Radeon Open Compute platform(AMD)
 Skb	Socket Buffer
 sm	Shared Memory
 SM	Subnet Manager(Infiniband)
-SockCM	
+SockCM	Socket Connection Manager
 SRQ	Shared Receive Queue
 SYSV	UNIX System V
-tl
+tl	Transport Layer
 UC	Unreliable Connection (Infiniband)
 UCF	Unified Communication Framework
 UCM	Unified Communication Memory
