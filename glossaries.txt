@@ -6,10 +6,12 @@ bcopy	Byte copy
 BTL	Byte Transfer Layer
 cm	Connection Manager
 CMA	Cross Memory Attach
+CQ	Completion Queue(Infiniband)
+CQE	Completion Queue Entry(Infiniband)
 csmock	static analysis tools
 CUDA	Compute Unified Device Architecture(NVIDIA)
 DC	Dynamically Connected transport(Infiniband)
-ep	End Point
+ep	EndPoint
 fd	File Descriptor
 GDR	GPUDirect RDMA
 gtest	Google Test
@@ -22,7 +24,7 @@ KNEM	Kernel Nemesis
 md	Memory Domain
 MLX	Mellanox Technologies
 mlx5	Connect-X5 VPI
-mm	Memory Management
+mm	Memory Mapper
 MPI	Message Passing INterface
 MPICH	A MPI Implementation
 MTT	The MPI Testing Tool
