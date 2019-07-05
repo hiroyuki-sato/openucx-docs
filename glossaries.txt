@@ -1,6 +1,7 @@
 # KEYWORD <TAB> DESCRIPTION
 # Sort alphabetical order (case insensitive)
 ACK	Acknowledge
+AMO	Atomic Memory Operation
 am	Active Message
 bcopy	Byte copy
 BTL	Byte Transfer Layer
@@ -65,6 +66,7 @@ UCX	Unified Communication X
 UD	Unreliable Datagram (Infiniband)
 uGNI	user level generic network interface(Cray)
 VPI	Virtual Protocol Interconnect
+WQ	Work Queue(Infiniband)
 WQE	Work Queue Elements (pronounce WOOKIE)
 WR	Work Request
 XPMEM	cross partition memory
