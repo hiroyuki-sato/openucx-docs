@@ -1,8 +1,8 @@
 # KEYWORD <TAB> DESCRIPTION
 # Sort alphabetical order (case insensitive)
 ACK	Acknowledge
-AMO	Atomic Memory Operation
 am	Active Message
+AMO	Atomic Memory Operation
 bcopy	Byte copy
 BTL	Byte Transfer Layer
 cm	Connection Manager
@@ -17,6 +17,7 @@ fd	File Descriptor
 GDR	GPUDirect RDMA
 gtest	Google Test
 HPC	High Performance Computing
+HWTM	HardWare Tag Matching
 IB	Infiniband
 iface	Interaface
 IPC	Inter Process Communication
@@ -56,6 +57,7 @@ SockCM	Socket Connection Manager
 SRQ	Shared Receive Queue
 SYSV	UNIX System V
 tl	Transport Layer
+TM	Tag Matching
 UC	Unreliable Connection (Infiniband)
 UCF	Unified Communication Framework
 UCM	Unified Communication Memory
