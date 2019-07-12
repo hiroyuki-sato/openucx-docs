@@ -23,6 +23,7 @@ iface	Interaface
 IPC	Inter Process Communication
 JUCX	Java API over UCP
 KNEM	Kernel Nemesis
+madvise	give advice about use of memory. See manual madvise(2)
 md	Memory Domain
 MLX	Mellanox Technologies
 mlx5	Connect-X5 VPI
@@ -40,6 +41,7 @@ Open MPI	A MPI Implementation
 PCIe	PCI Express
 PGAS	Partitioned Global Address Space
 POSIX	Portable operating system interface
+ppn	processes per node
 PR	Pull Request
 QP	Queue Pair(Infiniband)
 RC	Reliable Connection (Infiniband)
