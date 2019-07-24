@@ -3,6 +3,7 @@
 ACK	Acknowledge
 am	Active Message
 AMO	Atomic Memory Operation
+AZP	AZure Pipeline
 bcopy	Byte copy
 BTL	Byte Transfer Layer
 cm	Connection Manager
