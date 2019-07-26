@@ -44,6 +44,7 @@ PGAS	Partitioned Global Address Space
 POSIX	Portable operating system interface
 ppn	processes per node
 PR	Pull Request
+PROGRESS64	A C library of scalable functions for concurrent programs, primarily focused on networking applications.(https://github.com/ARM-software/progress64)
 QP	Queue Pair(Infiniband)
 RC	Reliable Connection (Infiniband)
 RDMA	Remote Direct Memory Access
