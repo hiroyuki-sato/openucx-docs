@@ -33,6 +33,7 @@ MPI	Message Passing INterface
 MPICH	A MPI Implementation
 MTT	The MPI Testing Tool
 NAK	Negative Acknowledge
+ODP	OnDemand Paging
 OFA	OpenFabrics Alliance
 OMPI	OpenMPI
 OOB	Out of band
