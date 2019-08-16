@@ -3,6 +3,7 @@
 ACK	Acknowledge
 am	Active Message
 AMO	Atomic Memory Operation
+ANL	Argonne National Laboratory
 AZP	AZure Pipeline
 bcopy	Byte copy
 Bistro	Binary Instrumentation
@@ -27,6 +28,7 @@ IPC	Inter Process Communication
 JUCX	Java API over UCP
 KLM	A new sophisticated way of creating memory regions.(Mellanox specific)
 KNEM	Kernel Nemesis
+LLNL	Lawrence Livermore National Laboratory
 madvise	give advice about use of memory. See manual madvise(2)
 md	Memory Domain
 MEMH	Memory Handle
@@ -44,6 +46,7 @@ OOB	Out of band
 OOO	Out of Order
 OPA	Omni-Path Architecture
 Open MPI	A MPI Implementation
+ORNL	Oak Ridge National Laboratory
 PCIe	PCI Express
 PGAS	Partitioned Global Address Space
 POSIX	Portable operating system interface
