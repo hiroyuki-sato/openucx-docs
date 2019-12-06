@@ -1,7 +1,3 @@
-- [ ] LinuxのThread IDはどのように取得するか？
-- [ ] 
-
-
 ## UCS ASYNC SIGNAL BLOCKのインターフェース
 
 ### ヘッダ定義
@@ -50,7 +46,7 @@ typedef struct ucs_async_signal_context {
 | add_event_fd | |
 | remove_event_fd | |
 | modify_event_fd | |
-| add_timer | |
+| add_timer | ucs_async_signal_timerq_add_timer |
 | remove_timer | |
 
 ### ucs_async_signal_global_init
@@ -147,3 +143,68 @@ static void ucs_async_signal_block_all()
     pthread_mutex_unlock(&ucs_async_signal_global_context.event_lock);
 }
 ```
+
+### ucs_async_signal_timerq_add_timer
+
+```
+ucs_async_signal_timerq_add_timer(ucs_async_signal_timer_t *timer, int tid,
+                                  int timer_id, ucs_time_t interval)
+```
+
+```C
+/*
+ * Per-thread system timer and software timer queue. We can dispatch timers only
+ * on the same thread which added them.
+ */
+typedef struct ucs_async_signal_timer {
+    pid_t                      tid;          /* Thread ID */
+    timer_t                    sys_timer_id; /* System timer ID */
+    ucs_timer_queue_t          timerq;       /* Queue of timers for the thread */
+} ucs_async_signal_timer_t;
+```
+
+関数呼び出し時に引数として渡された、ucs_async_signal_timer_t 構造体の`timer->tid`が0だったら(この変数にはスレッドの番号が入る)
+引数で渡されたスレッドIDを設定する。
+ucs_timerq_initを使ってtimerqを初期化する
+
+TODO
+
+```
+uid = (timer - ucs_async_signal_global_context.timers);
+```
+
+ucs_async_signal_sys_timer_create を呼び出す(後述)
+
+作成したタイマーをucs_timerq_addでタイマーキューに追加
+(interval をここでセット)
+
+
+```
+sys_interval = ucs_timerq_min_interval(&timer->timerq);
+status = ucs_async_signal_sys_timer_set_interval(timer->sys_timer_id,
+                                                 sys_interval);
+```
+
+
+
+
+
+#### ucs_async_signal_sys_timer_create
+
+```
+ucs_async_signal_sys_timer_create(int uid, pid_t tid, timer_t *sys_timer_id)
+```
+
+sigevent構造体の初期化を行う
+
+* ev.sigev_notify: SIGEV_THREAD_IDをセットする。これによりsigev_notify_thread_idで指定したスレッドにsignalを送る
+* ev.sigev_signo: タイマーexpire時に送るシグナルの種類
+* ev.sigev_value.sival_int: uid シグナルハンドラーに渡すユーザデータ
+* ev.sigev_notify_thread_id: シグナルを送るスレッド
+
+タイマーを作成する
+timer_create(CLOCK_REALTIME, &ev, &timer);
+
+タイマーの識別IDが格納された、timer変数の値を呼び出し時に渡されたsys_timer_idにコピーする
+
+
