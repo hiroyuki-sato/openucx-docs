@@ -15,6 +15,7 @@ CQE	Completion Queue Entry(Infiniband)
 csmock	static analysis tools
 CUDA	Compute Unified Device Architecture(NVIDIA)
 DC	Dynamically Connected transport(Infiniband)
+DPM	Direct Packet Mode
 ep	EndPoint
 FC	Flow Control
 fd	File Descriptor
@@ -28,6 +29,7 @@ IPC	Inter Process Communication
 JUCX	Java API over UCP
 KLM	A new sophisticated way of creating memory regions.(Mellanox specific)
 KNEM	Kernel Nemesis
+LDPM	Legacy DPM
 LLNL	Lawrence Livermore National Laboratory
 madvise	give advice about use of memory. See manual madvise(2)
 md	Memory Domain
@@ -37,6 +39,7 @@ mlx5	Connect-X5 VPI
 mm	Memory Mapper
 MPI	Message Passing INterface
 MPICH	A MPI Implementation
+MP-XRQ	Multi-Packet XRQ
 MTT	The MPI Testing Tool
 NAK	Negative Acknowledge
 ODP	OnDemand Paging
@@ -86,9 +89,12 @@ UD	Unreliable Datagram (Infiniband)
 uGNI	user level generic network interface(Cray)
 UMR	User mode memory registration
 VPI	Virtual Protocol Interconnect
+WIP-DNM	Work-in-Progress-Do-Not-Merge
 WQ	Work Queue(Infiniband)
 WQE	Work Queue Elements (pronounce WOOKIE)
 WR	Work Request
 XPMEM	cross partition memory
 XRC	eXtended Reliable Connection(Infiniband)
+XRCD	XRC Domains
+XRQ	Mellanox Shared Receive Queue
 Zcopy	Zero Copy
