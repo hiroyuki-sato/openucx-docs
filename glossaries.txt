@@ -51,6 +51,7 @@ OPA	Omni-Path Architecture
 Open MPI	A MPI Implementation
 ORNL	Oak Ridge National Laboratory
 PCIe	PCI Express
+PFN	Physical Page Frame
 PGAS	Partitioned Global Address Space
 POSIX	Portable operating system interface
 ppn	processes per node
