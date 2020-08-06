@@ -37,9 +37,9 @@ MEMH	Memory Handle
 MLX	Mellanox Technologies
 mlx5	Connect-X5 VPI
 mm	Memory Mapper
+MP-XRQ	Multi-Packet XRQ
 MPI	Message Passing INterface
 MPICH	A MPI Implementation
-MP-XRQ	Multi-Packet XRQ
 MTT	The MPI Testing Tool
 NAK	Negative Acknowledge
 ODP	OnDemand Paging
@@ -80,6 +80,7 @@ TLS	Transpot LayerS
 TM	Tag Matching
 TX	Transmit
 UC	Unreliable Connection (Infiniband)
+UCC	Unified Collective Communications
 UCF	Unified Communication Framework
 UCM	Unified Communication Memory
 UCP	Unified Communication Protocols Higher level API
